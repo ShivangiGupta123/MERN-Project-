@@ -15,7 +15,7 @@ function CreateClientForm() {
   const handleSubmit= async()=>{
     try{
         console.log("data" ,data)
-        let response = git fetch originaxios.post('http://localhost:5000/api/v1/client' , data)
+        let response = axios.post('http://localhost:5000/api/v1/client' , data)
         console.log("response" , response)
         alert("client is created successfully")
         navigate('/clients')
